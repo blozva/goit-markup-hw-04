@@ -100,12 +100,6 @@ img {
 .site-nav-link:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav-link {
-  display: block;
-}
-.auth-nav-link {
-  display: block;
-}
 .auth-nav-link:not(:last-child) {
   margin-right: 50px;
 }
