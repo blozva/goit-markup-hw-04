@@ -29,6 +29,7 @@ ul {
   /* прибираємо крапочки */
   list-style: none;
 }
+.link-item,
 .link {
   display: block;
 }
@@ -49,6 +50,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+  outline: 1px solid greenyellow;
 }
 .section {
   padding-top: 94px;
@@ -332,17 +334,20 @@ img {
 .activities {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
-.activities .activities-cards {
-  background-color: var(--primary-title-color);
-  flex-basis: calc(100% / 3 - 30px);
+.activities-cards {
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+.activities-cards:nth-child(3n) {
+  margin-right: 0;
+}
+.activities-cards:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 .activities-title {
-  border: 1px solid #eeeeee;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
