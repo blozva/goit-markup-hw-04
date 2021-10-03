@@ -29,12 +29,10 @@ ul {
   /* прибираємо крапочки */
   list-style: none;
 }
+/* прибираємо підкреслювання */
 .link-item,
 .link {
   display: block;
-}
-/* прибираємо підкреслювання */
-.link-item {
   text-decoration: none;
 }
 /* Прибираємо відстань знизу зображення
@@ -99,12 +97,12 @@ img {
   margin-left: auto;
   align-items: center;
 }
-.site-nav-link:not(:last-child) {
+.site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.auth-nav-link:not(:last-child) {
+.auth-nav-item:not(:last-child) {
   margin-right: 50px;
-}
+} 
 .control .link {
   font-weight: 500;
   font-size: 14px;
@@ -114,15 +112,34 @@ img {
 .site-nav .link {
   color: var(--title-text-color);
   text-decoration: none;
-  display: block;
 }
-.auth-nav .link {
+.nav-link {
   color: var(--text-item-color);
   text-decoration: none;
+  display: flex; 
+  align-items: center;
 }
-.control .link:hover,
-.control .link:focus {
+
+/* svg */
+.nav-icon {
+  margin-right: 10px;
+  fill: var(--text-item-color)
+}
+.nav-icon-envelope {
+  height: 12px;
+  width: 16px;
+}
+.nav-icon-smartphone {
+  height: 16px;
+  width: 10px;
+}
+.control .nav-link:hover,
+.control .nav-link:focus {
   color: var(--accent-color);
+}
+.control .nav-link:hover .nav-icon,
+.control .nav-link:focus .nav-icon {
+  fill: var(--accent-color);
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -141,10 +158,6 @@ img {
   background-position: center;
   background-size: cover;
 }
-/* .section-hero-fon {
-  color: var(--primary-title-color);
-  background-image:url(../images1/hero.jpg);
-  Fill: rgba(47, 48, 58, 0.4) */
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -234,8 +247,23 @@ img {
   display: flex;
 }
 .items {
+  height: 251px;
   width: 270px;
 }
+
+.cartons {
+ 
+}
+.cartons-benefits {
+padding-top: 25px;
+
+
+}
+
+/* .benefits-items {
+  height: 70px;
+  width: 70px;
+} */
 .items:not(:last-child) {
   margin-right: 30px;
 }
