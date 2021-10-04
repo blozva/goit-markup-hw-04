@@ -50,7 +50,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 1px solid greenyellow; 
 }
 .section {
   padding-top: 94px;
@@ -415,17 +414,18 @@ border-radius: 4px;
   align-items: center;
   justify-content: center;
 } 
+.company-link:hover,
+.company-link:focus {
+ border: 1px solid var(--accent-color);
+}
 .company-icon {
   width: 106px;
   height: 60px; 
-
-  Fill: var(--social-icon-color)
+  fill: var(--social-icon-color)
 }
 .company-link:hover .company-icon,
-.company-ink:focus .company-icon{
-  color:var(--accent-color); 
+.company-link:focus .company-icon {
   fill: var(--accent-color);
-  border: 1px solid var(--social-icon-color); 
 }
 /* ---footer--- */
 .footer {
