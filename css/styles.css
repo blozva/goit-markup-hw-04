@@ -5,7 +5,9 @@
   --text-item-color: #757575;
   --section-aside-color: #2f303a;
   --section-secondary-color: #f5f4fa;
+  --social-icon-color: #AFB1B8;
   --accent-color: #2196f3;
+  
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -188,7 +190,7 @@ img {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188ce8;
+background-color: #188ce8;
 }
 .desc-button:hover,
 .desc-button:focus {
@@ -274,9 +276,6 @@ width: 270px;
 height: 120px;
 background: var(--section-secondary-color);
 border-radius: 4px;
-}
-.cartons-benefits {
-  
 }
 .items-benefits:last-child {
   margin-right: 0;
@@ -391,13 +390,33 @@ border-radius: 4px;
 .social-icon {
   width: 20px;
   height: 20px;
-  Fill: #AFB1B8
+  Fill: var(--social-icon-color)
+}
+/* Наші клієнти */
+.company {
+  margin-right: 30px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.company:last-child {
+  margin-right: 0;
+}
+.company-icon {
+  width: 106px;
+  height: 60px;
+  Fill: var(--social-icon-color)
 }
 /* ---footer--- */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--section-aside-color);
+}
+.footer-container {
+  display: flex;
 }
 .address {
   display: flex;
@@ -432,8 +451,9 @@ border-radius: 4px;
 .footer-social {
  width: 206px;
  height: 80px;
+ padding-top: 12px;
 }
-.footer-headlin {
+.footer-headline {
 margin-bottom: 20px;
 font-weight: 700;
 font-size: 14px;
