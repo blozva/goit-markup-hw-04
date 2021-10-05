@@ -119,8 +119,8 @@ img {
   display: flex;
   align-items: center;
 }
-.site-nav-item:hover .link,
-.site-nav-item:focus .link {
+.site-nav-item .link:hover,
+.site-nav-item .link:focus {
   color: var(--accent-color);
 }
 
